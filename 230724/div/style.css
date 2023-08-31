@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: beige;
+    color: rgb(206, 139, 51);
+    padding: 1rem;
+    border-radius: 1rem;    
+    height:75vh;
+    background-image:url('https://images.pexels.com/photos/5122167/pexels-photo-5122167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover; /* contain / cover */
+    background-position: center;
+    background-attachment: fixed;
+}
+.container h2{
+    font-size: 30px;
+}
+.container p{
+    font-size: 24px;
+}

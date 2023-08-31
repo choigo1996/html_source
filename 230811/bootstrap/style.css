@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --bs-font-sans-serif: 'Noto Sans KR', sans-serif;
+}
+.hero{
+    background-image: url("https://images.pexels.com/photos/4178724/pexels-photo-4178724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    z-index: 0;
+}
+.hero::before{
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    content:'';
+    background-color: rgba(0, 0, 0, 0.5)
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form autocomplete="off">
+        <p>
+            <label for="userId">아이디</label>
+            <input id="userId" type="text" placeholder="아이디를 입력해주세요">
+        </p>
+        <p>
+            <label for="password">패스워드</label>
+            <input id="password" type="password" placeholder="비밀번호를 입력해주세요">
+        </p>
+        <p>
+            <label for="check">개인정보 사용에 동의하시겠습니까</label>
+            <input id="check" type="checkbox" checked>
+        </p>
+        <p>
+            <label>
+                이메일주소
+                <input type="text">
+            </label>
+        </p>
+        <h3>정기결제를 하시겠습니까</h3>
+        <p>
+            <label for="yes">Yes</label>
+            <input id="yes" type="radio"  name="payment">
+            <label for="no">No</label>
+            <input id="no" type="radio"  name="payment">
+        </p>
+        <h3>좋아하는 과일을 선택해주세요</h3>
+        <p>
+            <label for="strawberry">딸기</label>
+            <input type="radio" id="strawberry" name="fruit">
+            <label for="banana">바나나</label>
+            <input type="radio" id="banana" name="fruit">
+            <label for="watermelon">수박</label>
+            <input type="radio" id="watermelon" name="fruit">
+        </p>
+        <p>
+            <select name="animal">
+                <option value="고양이">고양이</option>
+                <option value="호랑이">호랑이</option>
+                <option value="강아지">강아지</option>
+            </select>
+        </p>
+
+
+        <p>
+            <button type="submit">제출</button>
+        </p>
+    </form>
+</body>
+
+</html>

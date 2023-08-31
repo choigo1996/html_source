@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.list {
+  display: flex;
+  list-style: none;
+}
+.list > li > a {
+  display: flex;
+  padding: 1rem;
+  align-items: start;
+  text-transform: uppercase;
+}
+.new {
+  font-size: 11px;
+  margin-left: 5px;
+  color: mediumseagreen;
+  font-weight: bold;
+}

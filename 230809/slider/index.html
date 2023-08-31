@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/17589784/pexels-photo-17589784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/5556304/pexels-photo-5556304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide ">
+                <figure>
+                    <img src="https://images.pexels.com/photos/17827643/pexels-photo-17827643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/17889551/pexels-photo-17889551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/13294564/pexels-photo-13294564.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/11544821/pexels-photo-11544821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper-second">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/17589784/pexels-photo-17589784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/5556304/pexels-photo-5556304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide ">
+                <figure>
+                    <img src="https://images.pexels.com/photos/17827643/pexels-photo-17827643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/17889551/pexels-photo-17889551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/13294564/pexels-photo-13294564.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <img src="https://images.pexels.com/photos/11544821/pexels-photo-11544821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            // Optional parameters
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // effect: 'coverflow',
+            // coverflowEffect: {
+            //     rotate: 20,
+            //     slideShadows: false,
+            // },
+        });
+        const swiperSecond = new Swiper('.swiper-second', {
+            slidesPerView: 1,
+            // Optional parameters
+            loop: true,
+
+        });
+    </script>
+</body>
+
+</html>

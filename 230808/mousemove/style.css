@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --size: 200px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* cursor: none; */
+}
+
+body {
+    /* background-color: white; */
+    background-image: url("https://images.pexels.com/photos/16027786/pexels-photo-16027786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.title {
+    font-size: 120px;
+    color: white;
+    letter-spacing: -1px;
+    word-spacing: -10px;
+    line-height: 1;
+    mix-blend-mode: difference;
+    user-select: none;
+    cursor:none;
+}
+.dot {    
+    width: var(--size);
+    height: var(--size);
+    position: fixed;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: var(--size);
+    transition: all 200ms linear;
+    z-index: -1;
+    
+    /* background-image: url('image/dog.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+/* .dot::before{
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+    background-color: black;
+    left: calc(var(--size) / 2);
+    position: absolute;
+    mix-blend-mode: luminosity;
+    content:'';
+} */
+.dot .bubble{    
+    display: block;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    animation: bubble 200ms forwards linear;
+    background-color: white;
+    border-radius: var(--size)
+}
+
+@keyframes bubble {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(2);
+        opacity: 0;
+    }
+}

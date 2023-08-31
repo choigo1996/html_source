@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Bootstrap demo</title>
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--  navigation -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top py-2">
+      <div class="container">
+        <a class="navbar-brand text-primary" href="#"
+          ><i class="bi bi-geo-alt-fill"></i>산책하개</a
+        >
+        <button
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a aria-current="page" class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex ms-auto gap-2">
+            <button class="btn btn-light">login</button>
+            <button class="btn btn-primary">Try for free</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- jumbotron-->
+    <div
+      class="p-5 hero d-flex align-items-center justify-content-center flex-column"
+    >
+      <div class="container-fluid py-5 z-2">
+        <div class="container text-white">
+          <h1 class="display-5 fw-bold">우리개랑 산책하개</h1>
+          <p class="col-lg-10 col-md-8 col-sm-12 text-white-100">
+            반려견 산책서비스는 반려견의 건강과 행복을 위해 필요한 서비스입니다.
+            저희 서비스는 전문적인 산책 도우미가 반려견과 함께 산책을 하며,
+            반려견의 건강 상태와 행동 패턴을 체크하여 적절한 케어를 제공합니다.
+            또한, 반려견의 건강 상태와 행동 패턴을 기록하여 주인님께 제공하며,
+            반려견의 건강 상태를 체크할 수 있도록 도와드립니다. 저희 서비스는
+            건강한 반려견을 위해 필요한 서비스이니 많은 이용 부탁드립니다
+          </p>
+          <button
+            class="btn btn-primary btn-lg d-flex gap-2 fs-4"
+            type="button"
+          >
+            <i class="bi bi-geo-alt-fill"></i>산책하러가기
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--    features-->
+    <div class="container-fluid py-5 bg-light mb-5" id="features">
+      <div class="container">
+        <header class="mb-5 text-center">
+          <h2 class="display-5 fw-bold">Features</h2>
+          <p>산책이 반려견에게 주는 3가지 장점!</p>
+        </header>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 p-4">
+            <div
+              class="badge fs-5 mb-3 shadow text-white fw-normal text-bg-primary"
+            >
+              Benefit 1
+            </div>
+            <h3 class="d-flex gap-2">건강한 반려견 유지</h3>
+            <p>
+              산책은 반려견의 건강을 유지하는 데 중요합니다. 적절한 운동량을
+              유지하면서 근육을 강화하고 체중을 조절할 수 있습니다. 또한, 산책은
+              반려견의 심리적 건강에도 도움이 됩니다.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-12 p-4">
+            <div
+              class="badge fs-5 mb-3 shadow text-white fw-normal text-bg-primary"
+            >
+              Benefit 2
+            </div>
+            <h3 class="d-flex gap-2">사회성 향상</h3>
+            <p>
+              산책은 반려견의 사회성을 향상시키는 데 도움이 됩니다. 다른
+              반려견이나 사람들과 만나면서 사회성을 키울 수 있습니다.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-12 p-4">
+            <div
+              class="badge fs-5 mb-3 shadow text-white fw-normal text-bg-primary"
+            >
+              Benefit 3
+            </div>
+            <h3 class="d-flex gap-2">주인과의 유대감 형성</h3>
+            <p>
+              산책은 반려견과 주인 간의 유대감을 형성하는 데 도움이 됩니다. 함께
+              시간을 보내면서 서로에 대해 더 잘 알아가고, 서로에게 더욱 친밀해질
+              수 있습니다
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    image -->
+    <div class="container p-0 mb-5">
+      <div class="card shadow">
+        <figure class="ratio ratio-21x9 h-100 m-0">
+          <img
+            alt="..."
+            class="card-img object-fit-cover"
+            src="https://images.pexels.com/photos/16652420/pexels-photo-16652420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          />
+        </figure>
+        <div
+          class="card-img-overlay d-flex align-items-center justify-content-center top-50 start-50 translate-middle"
+        >
+          <h3 class="display-5 fw-bold text-white">우리개랑 산책하개</h3>
+        </div>
+      </div>
+    </div>
+    <!--      pricing -->
+    <div class="container-fluid bg-light" id="pricing">
+      <div class="container py-5">
+        <header class="mb-5 text-center">
+          <h2 class="display-5 fw-bold">Pricing</h2>
+          <p>합리적인 가격으로 댕댕이를 지칠때까지 산책시켜드립니다</p>
+        </header>
+        <div class="row">
+          <div class="offset-md-1 col-md-10 col-sm-12">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="card-header">일반</div>
+                  <div class="card-body">
+                    <h5 class="card-title">시간당 3만원</h5>
+                    <p class="card-text">
+                      얼마인지 몰라서 대충 썼습니다. 많이 주세요
+                    </p>
+                    <a class="btn btn-primary" href="#contact"
+                      >서비스신청하기</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="card border-primary">
+                  <div class="card-header text-bg-primary">프리미엄</div>
+                  <div class="card-body">
+                    <h5 class="card-title">싯가</h5>
+                    <p class="card-text">
+                      기분 내키는대로 받습니다. 단단히 각오하세요
+                    </p>
+                    <a class="btn btn-primary" href="#contact"
+                      >서비스신청하기</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    form -->
+    <div class="container-fluid" id="contact">
+      <div class="container py-5">
+        <header class="mb-5 text-center">
+          <h2 class="display-5 fw-bold">Contact</h2>
+          <p>합리적인 가격으로 댕댕이를 지칠때까지 산책시켜드립니다</p>
+        </header>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <figure class="ratio shadow ratio-1x1 rounded-2 overflow-hidden">
+              <img
+                alt=""
+                class="object-fit-cover w-100"
+                src="https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+            </figure>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <form class="needs-validation" novalidate="">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label" for="lastName">성</label>
+                  <input
+                    class="form-control"
+                    id="lastName"
+                    placeholder=""
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <div class="invalid-feedback">성을 입력해주세요</div>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="firstName">이름</label>
+                  <input
+                    class="form-control"
+                    id="firstName"
+                    placeholder=""
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <div class="invalid-feedback">이름 입력해주세요</div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="email"
+                    >이메일
+                    <span class="text-body-secondary">(Optional)</span></label
+                  >
+                  <input
+                    class="form-control"
+                    id="email"
+                    placeholder="you@example.com"
+                    type="email"
+                  />
+                  <div class="invalid-feedback">이메일 주소를 입력해주세요</div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="address">주소</label>
+                  <input
+                    class="form-control"
+                    id="address"
+                    placeholder="1234 Main St"
+                    required=""
+                    type="text"
+                  />
+                  <div class="invalid-feedback">주소를 입력해주세요</div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="address2"
+                    >상세주소
+                    <span class="text-body-secondary">(Optional)</span></label
+                  >
+                  <input
+                    class="form-control"
+                    id="address2"
+                    placeholder="Apartment or suite"
+                    type="text"
+                  />
+                </div>
+
+                <div class="col-md-5">
+                  <label class="form-label" for="country">국가</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="">Choose...</option>
+                    <option>한국</option>
+                    <option>일본</option>
+                    <option>중국</option>
+                  </select>
+                  <div class="invalid-feedback">한국만 서비스됩니다</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label" for="state">지역</label>
+                  <select class="form-select" id="state" required="">
+                    <option value="">Choose...</option>
+                    <option>대전</option>
+                  </select>
+                  <div class="invalid-feedback">지역을 입력해주세요.</div>
+                </div>
+
+                <div class="col-md-3">
+                  <label class="form-label" for="zip">우편번호</label>
+                  <input
+                    class="form-control"
+                    id="zip"
+                    placeholder=""
+                    required=""
+                    type="text"
+                  />
+                  <div class="invalid-feedback">우편번호를 입력해주세요.</div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  id="same-address"
+                  type="checkbox"
+                />
+                <label class="form-check-label" for="same-address"
+                  >청구지와 배송지가 같습니다</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  id="save-info"
+                  type="checkbox"
+                />
+                <label class="form-check-label" for="save-info"
+                  >다음에도 사용하도록 정보 저장하기</label
+                >
+              </div>
+
+              <hr class="my-4" />
+
+              <button class="w-100 btn btn-primary btn-lg" type="button">
+                신청하기
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            href="/"
+          >
+            <svg class="bi" height="24" width="30">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2023 Company, Inc</span
+          >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>

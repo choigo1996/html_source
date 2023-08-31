@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #ddc6af; */
+    height: 100vh;
+}
+.video-wrapper{    
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+.video-wrapper::before{
+    width: 100%;
+    height: 30%;
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    /* background:linear-gradient(0deg,red,transparent) */
+    background:linear-gradient(0deg,#ddc6af,transparent);
+}
+video{
+    width: 100%;
+    height: 100%;      
+    object-fit: cover;
+}
+.youtube{
+    aspect-ratio: 9/16;
+    /* position:relative;
+    padding-bottom:56.25%; */
+}
+.youtube iframe{
+    /* position: absolute;
+    top:0;
+    left:0; */
+    width: 100%;
+    height: 100%;
+}

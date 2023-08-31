@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 전역변수 global - 전체영역에서 쓰일 변수 */
+:root {
+  --color: red;
+}
+/* 부모 */
+.bar {
+  width: 500px;
+  height: 40px;
+  background-color: rgb(236, 228, 228);
+}
+/* 자식 - 실제 그려질 그래프 */
+.graph {
+  /* 지역변수 - global 전역변수보다 우선순위가 높다 */
+  --color: rgb(36, 151, 43);
+  width: 60%;
+  height: 100%;
+  background-color: var(--color);
+}

@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.pricing{
+    display: flex;
+    gap:32px;
+    letter-spacing: -0.8px;
+    padding: 1rem;
+}
+
+.pricing-item{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    padding: 32px;
+    border:1px solid rgb(198, 198, 198);
+    border-radius: 1rem;    
+}
+.pricing-item .cta{
+    padding: 1rem 2rem;
+    border-radius:8px;
+    border:1px solid rgb(13, 13, 171);
+    color:rgb(13, 13, 171);
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pricing-item ul{
+    list-style: none;
+}
+.pricing-item ul li{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap:8px;
+    color: rgb(68, 68, 68);
+}
+.pricing-item h2{
+    font-size: 1.5rem;
+}
+.pricing-item p{
+    line-height: 1.75;
+    color:rgb(68, 68, 68)    
+}
+.pricing-item .cost{
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -2px;    
+}
+
+.pricing-item .icon{
+    color: rgb(13, 13, 171);
+}
+.pricing-item.recommend{
+    border:1px solid rgb(13, 13, 171);
+}
+.pricing-item.recommend h2{
+    color: rgb(13, 13, 171)
+}
+.pricing-item.recommend .cta{
+    background-color:rgb(13, 13, 171);
+    color: white;
+}

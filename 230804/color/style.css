@@ -1,0 +1,11 @@
+#title{
+    color: red;
+}
+#title.active{
+    color: blue;
+}
+#button{
+    border:0;
+    padding: 12px 16px;
+    border-radius:8px;
+}

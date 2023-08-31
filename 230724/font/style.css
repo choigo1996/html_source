@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Montserrat&family=Noto+Sans+KR:wght@100;400;700&display=swap');
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    /* google - font aliasing */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: #fff 0px 1px 1px;
+}
+
+.title{
+    /* font-family: 'Giants-Inline'; */
+    font-weight:400;
+    font-size: 18px;
+    letter-spacing: -0.5px; /* 자간 */
+    line-height: 1.75;  /* 행간 */
+    width: 50ch;                /* 글자수로 폭을 제어*/
+    text-transform:uppercase;   /* 모든 글자를 대문자로 */
+    text-transform:capitalize;  /* 단어의 첫글자를 대문자로 */
+}
+.sub-title{
+    /* 영문, 한글 순서로 폰트를 지정해주면, 같은 클래스 안에서 영문따로, 한글따로 폰트를 지정해줄 수 있다. */
+    font-family: 'Montserrat','Diphylleia', sans-serif;
+    text-transform: lowercase;  /* 모든 글자를 소문자로 */
+    text-decoration: line-through;  /* 취소선 */
+    text-decoration: underline;    /* 밑줄 */
+}
+.link{
+    text-decoration: none;
+}
+.link:link,
+.link:visited{
+    color:black;
+}
+.image{
+    display: flex;
+    align-items:center;
+    width: 100vw;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    aspect-ratio: 3/2;
+}
+.image img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    max-width: 100%;
+}

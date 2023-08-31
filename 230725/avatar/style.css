@@ -1,0 +1,42 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 300px;
+    display:flex;
+    gap:1rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(1, 0.11, 0, 1.1);
+}
+.container:hover{
+    background-color: black;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.5);
+}
+.container:hover .content{
+    opacity:0.5;
+    color: white;
+}
+.container .avatar{
+    display:flex;
+    width: 60px;
+    height:60px;
+    border-radius: 60px;
+    overflow: hidden;
+    border:1px solid black;
+}
+.content{}
+.content .username{
+    font-size: 16px;
+    margin-bottom:4px;
+}
+.content .job{
+    font-size: 14px;
+    color:rgb(172, 172, 172);
+}

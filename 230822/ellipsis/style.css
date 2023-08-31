@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 한줄 말줄임표 적용 */
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* 여러줄 처리할 경우 */
+.multiple-text-ellipsis {
+  display: block;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  /* 3줄 적용시 */
+  -webkit-line-clamp: 3;
+  /* 높이 필요 */
+  height: 70px;
+  line-height: 1.5;
+}

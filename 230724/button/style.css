@@ -1,0 +1,23 @@
+.btn{
+    font-size:1rem;
+    border: 1px solid blue;
+    padding: 0.5rem 1rem; /* 1rem = 16px */
+    background-color: white;
+    cursor: pointer;
+}
+.btn:hover{    
+    /* x, y, blur, spread, color */
+    box-shadow:0 10px 20px rgba(103, 80, 80, 0.5);
+    /* 글자 두껍게 */
+    font-weight: 800;
+}
+.btn.pink{
+    border:1px solid pink;
+    color: pink;
+}
+.btn.blue{
+    color:blue;
+}
+.btn.round{
+    border-radius:8px;
+}

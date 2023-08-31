@@ -1,0 +1,68 @@
+:root{
+    --size:70px;
+    --brand: blue;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    padding: 1rem;
+    flex-basis: calc(100% / 4);
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.image-wrapper .badge {
+    --size:30px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+    position: absolute;
+    background-color: var(--brand);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.image-wrapper figure {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 1rem;
+    color: rgb(94, 94, 94);
+}

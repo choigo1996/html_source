@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    scroll-behavior:smooth ;
+}
+.list{
+    position: fixed;
+    width: 100vw;    
+    display: flex;
+    list-style: none;
+    text-transform: lowercase;
+    border-bottom:1px solid rgb(186, 186, 186);
+    backdrop-filter: blur(10px);
+}
+.list li a{
+    display: flex;
+    align-items: center;
+    gap:8px;
+    padding:14px 18px;
+    border-right: 1px solid rgb(186, 186, 186);   
+}
+.list li a:hover{
+    background-color: black;
+    color: white;
+}
+.list li a:active{
+    background-color: red;
+}
+a{ 
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+}
+.container h2{
+    padding-top: 60px;
+}
+.container:nth-child(odd){
+    background-color: wheat
+}
+.btn{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+}
